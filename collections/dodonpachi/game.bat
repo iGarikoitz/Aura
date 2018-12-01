@@ -1,0 +1,1 @@
+"../../emulators/RetroArch/retroarch.exe" -L "../../emulators/RetroArch/cores/fbalpha_libretro.dll" "ddonpach.zip"

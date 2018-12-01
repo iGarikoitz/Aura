@@ -1,0 +1,580 @@
+﻿<layout width="1920" height="1080">
+
+<sound type="load"      src="sounds/load.wav" />
+<sound type="highlight" src="sounds/highlight.wav" />
+<sound type="select"    src="sounds/select.wav" />
+<sound type="unload"    src="sounds/unload.wav" />
+
+<image src="images/background.png" width="1920" height ="1080" layer="0"/>
+
+<menu menuIndex="0" mode="system" type="custom" imageType="fanart blur" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+  <itemDefaults alpha="0" x="center" y="center"  xOrigin="center" yOrigin="center" width="1920" height="1080" containerX="0" containerY="0" containerWidth="1920" containerHeight="716" layer="1"/>
+  <item />
+  <item selected="true" alpha=".4">
+    <onEnter><set duration=".5"><animate type="width" from="2220" to="1920"/></set></onEnter>
+    <onMenuExit menuIndex="0"><set duration=".3"><animate type="alpha" to=".25"/></set></onMenuExit>
+    <onMenuExit menuIndex="1"><set duration=".3"><animate type="alpha" to=".4"/></set></onMenuExit>
+  </item>
+  <item />
+</menu>
+
+<menu menuIndex="0" mode="system" type="custom" imageType="fanart blur" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+  <itemDefaults alpha="0" x="center" y="center"  xOrigin="center" yOrigin="center" width="1920" height="1080" containerX="0" containerY="716" containerWidth="1920" containerHeight="366" layer="4"/>
+  <item />
+  <item selected="true" alpha=".4">
+    <onEnter><set duration=".5"><animate type="width" from="2220" to="1920"/><animate type="containerY" from="636" to="716"/><animate type="containerHeight" from="446" to="366"/></set></onEnter>
+    <onMenuExit menuIndex="0"><set duration=".3"><animate type="alpha" to=".25"/></set></onMenuExit>
+    <onMenuExit menuIndex="1"><set duration=".3"><animate type="alpha" to=".4"/> </set></onMenuExit>
+  </item>
+  <item />
+</menu>
+
+<image src="images/reflection.png" alpha="1" y="716" width="1920" height="366" layer="4"/>
+
+<image src="images/background.png" y="716" alpha="1" width="1920" height="400" layer="4">
+  <onEnter><set duration=".5"><animate type="yOffset" from="-80" to="0"/></set><set duration=".2"><animate type="alpha" from="1" to="0"/></set></onEnter>
+</image>
+
+<menu menuIndex="0" mode="system" type="custom" imageType="cover" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha="0" width="232" spacing="10" layer="11"/>
+  <item xOffset="-357"/>
+  <item selected="true" alpha="1" width="460">
+      <onEnter><set duration=".5"><animate type="alpha" to="1"/><animate type="width" from="240" to="520"/></set><set duration=".2"><animate type="width" from="520" to="460"/></set></onEnter>
+      <onMenuExit menuIndex="0"><set duration=".3"><animate type="x" to="285"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".3"><animate type="x" to="center"/></set></onMenuExit>
+  </item>
+  <item xOffset="357"/>
+</menu>
+
+<menu menuIndex="0" mode="commonlayout" type="custom" imageType="cristal" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha="0" width="232" spacing="10" layer="12"/>
+  <item xOffset="-357"/>
+  <item selected="true" alpha="1" width="466">
+      <onEnter><set duration=".5"><animate type="alpha" to="1"/><animate type="width" from="244" to="526"/></set><set duration=".2"><animate type="width" from="526" to="466"/></set></onEnter>
+      <onMenuExit menuIndex="0"><set duration=".3"><animate type="x" to="285"/><animate type="alpha" to="1"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".3"><animate type="x" to="center"/><animate type="alpha" to="1"/></set></onMenuExit>
+  </item>
+  <item xOffset="357"/>
+</menu>
+
+<menu menuIndex="0" mode="system" type="custom" imageType="cover" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha=".65" width="232" spacing="10" reflectionDistance="8" reflection="bottom" reflectionScale="1" reflectionAlpha=".5" layer="3"/>
+    <item xOffset="-1077" alpha="0"/>
+    <item xOffset="-837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="232"/><animate type="xoffset" from="-407" to="-837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to=".0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from=".0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="232"/><animate type="xoffset" from="-287" to="-597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to=".0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from=".0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="232"/><animate type="xoffset" from="-167" to="-357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to=".0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from=".0" to="0"/></set></onMenuExit>
+    </item>
+    <item selected="true" alpha="0" width="460"/>
+    <item xOffset="357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="232"/><animate type="xoffset" from="167" to="357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to=".0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from=".0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="232"/><animate type="xoffset" from="287" to="597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to=".0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from=".0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="232"/><animate type="xoffset" from="407" to="837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to=".0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from=".0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="1077" alpha="0"/>
+</menu>
+
+<reloadableText type="menu name" x="1250" y="792" xOrigin="left" yOrigin="center" alpha="0" textFormat="uppercase" font="fonts/ScoutCond-Bold.otf" fontSize="50" loadFontSize="50" fontColor="000000" layer="13">
+  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set></>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
+  <onMenuEnter menuIndex="1"><set duration=".01"><animate type="xoffset" from="0" to="20"/></set></onMenuExit>
+  <onMenuIdle menuIndex="0">
+		<set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set>
+		<set duration="100000"><animate type="nop"/></set></>
+  <onMenuScroll menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="game year" x="1250" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set></>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
+  <onMenuEnter menuIndex="1"><set duration=".01"><animate type="xoffset" from="0" to="20"/></set></onMenuExit>
+  <onMenuIdle menuIndex="0">
+		<set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set>
+		<set duration="100000"><animate type="nop"/></set></>
+  <onMenuScroll menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableImage mode="commonlayout" type="menu players" x="1321" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set></>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
+  <onMenuEnter menuIndex="1"><set duration=".01"><animate type="xoffset" from="0" to="20"/></set></onMenuExit>
+  <onMenuIdle menuIndex="0">
+		<set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set>
+		<set duration="100000"><animate type="nop"/></set></>
+  <onMenuScroll menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableImage mode="commonlayout" type="menu genre" x="1438" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set></>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
+  <onMenuEnter menuIndex="1"><set duration=".01"><animate type="xoffset" from="0" to="20"/></set></onMenuExit>
+  <onMenuIdle menuIndex="0">
+		<set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set>
+		<set duration="100000"><animate type="nop"/></set></>
+  <onMenuScroll menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableImage mode="commonlayout" type="firstLetter" menuScrollReload="yes" x="center" y="990" xOrigin="center" yOrigin="center" alpha="0" layer="13">
+  <onEnter><set duration=".4"><animate type="alpha" from="0" to="0"/></set><set duration=".3"><animate type="alpha" from="0" to=".2"/><animate type="yoffset" from="20" to="0"/></set></>
+  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".2"/></set></onMenuEnter>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".2" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+
+
+
+
+<!-- MENU FALSO DE LA INFORMACION DEL JUEGO -->
+<menu menuIndex="1" type="custom" imageType="null" scrollTime=".01" alpha="0" scrollAcceleration=".01" orientation="vertical">
+  <itemDefaults layer="1"/>
+    <item selected="true"/>
+</menu>
+
+<!-- MASCARA GRIS PARA EL FANART DEL MENU DE INFORMACION DEL JUEGO (MENU Nº 2)-->
+<image src="images/background.png" x="0" y="0" alpha="0" width="1920" height="1080" containerX="0" containerY="0" containerWidth="0" containerHeight="1080" layer="7">
+   <onMenuExit menuIndex="0"><set duration=".3"><animate type="alpha" to="1"/><animate type="containerWidth" to="1420"/></set></onMenuExit>
+   <onMenuExit menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/><animate type="containerWidth" to="0"/></set></onMenuExit>
+</image>
+
+<!-- FANART DEL MENU DE INFORMACION SOBRE EL JUEGO (MENU Nº 2)-->
+<reloadableImage type="fanart" alpha="0" x="0" y="0" width="1920" height="1080" containerX="0" containerY="0" containerWidth="0" containerHeight="1080" layer="8">
+  <onEnter><set duration=".1"><animate type="containerWidth" from="2" to="2"/></set></onEnter>
+   <onMenuExit menuIndex="0"><set duration=".3"><animate type="alpha" to=".2"/><animate type="containerWidth" to="1420"/></set></onMenuExit>
+   <onMenuExit menuIndex="1"><set duration=".3"><animate type="alpha" to="0"/><animate type="containerWidth" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<!-- EFECTO DE SEPARACION NEGRO ENTRE EL FANART CON BLUR Y EL FANART NORMAL (MENU Nº 2)-->
+<container  backgroundColor="000000" backgroundAlpha="0" width="2" height="stretch" layer="9">
+  <onMenuExit menuIndex="0"><set duration=".3"><animate type="backgroundAlpha" from="0" to=".1"/><animate type="xoffset" from="-2" to="1418"/></set></onMenuExit>
+  <onMenuExit menuIndex="1"><set duration=".3"><animate type="backgroundAlpha" from=".1" to="0"/><animate type="xoffset" from="1418" to="-2"/></set></onMenuExit>
+</container>
+
+<!-- EFECTO DE SEPARACION BLACO ENTRE EL FANART CON BLUR Y EL FANART NORMAL (MENU Nº 2)-->
+<container backgroundColor="ffffff" backgroundAlpha="0" width="2" height="stretch" layer="9">
+  <onMenuExit menuIndex="0"><set duration=".3"><animate type="backgroundAlpha" from="0" to=".3"/><animate type="xoffset" from="0" to="1420"/></set></onMenuExit>
+  <onMenuExit menuIndex="1"><set duration=".3"><animate type="backgroundAlpha" from=".3" to="0"/><animate type="xoffset" from="1420" to="0"/></set></onMenuExit>
+</container>
+
+<!-- LINEA DE SEPARACION 1 -->
+<image src="images/separation.png" x="963" y="421" width="812" xOrigin="center" alpha="0" layer="9">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".2"/></set></onMenuExit>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</image>
+
+<!-- LINEA DE SEPARACION 2 -->
+<image src="images/separation.png" x="963" y="656" xOrigin="center" alpha="0" layer="9">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".2"/></set></onMenuExit>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</image>
+
+<!-- NOMBRE DEL JUEGO -->
+<reloadableText type="game name" x="560" y="185" alpha="0" textFormat="uppercase" font="fonts/ScoutCond-Bold.otf" fontSize="50" loadFontSize="50" fontColor="000000" layer="13">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".6"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<!-- PUNTUACION DEL JUEGO CON IMAGENES DE ESTRELLAS -->
+<reloadableImage mode="commonlayout" type="game score" x="561" y="232"  height="20" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".55"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<!-- AÑO DE SALIDA DEL JUEGO -->
+<reloadableImage mode="commonlayout" type="game year" x="635" y="232" alpha="0" height="20" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".55"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<!-- NOMBRE DEL DESARRROLADOR DEL JUEGO -->
+<reloadableImage mode="commonlayout" type="game developer" x="706" y="232" alpha="0" height="20" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".55"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+
+<!-- CARACTERISTICAS GENERALES -->
+
+
+<!-- NUMERO DE JUGADORES -->
+<reloadableImage mode="commonlayout" type="game players" x="598" xOrigin="center" y="322" yOrigin="center" width="74" height="50" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<text value="GAMEPAD" x="600" xOrigin="center" y="376" yOrigin="center" font="fonts/Roboto-Regular.ttf" fontSize="20" loadFontSize="20" fontColor="000000" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</text>
+
+<reloadableText type="game players" x="596" xOrigin="center" y="395" yOrigin="center" textFormat="uppercase" font="fonts/Roboto-Black.ttf" fontSize="20" loadFontSize="20" fontColor="000000" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableText>
+
+<!-- GENERO DEL JUEGO -->
+<reloadableImage mode="commonlayout" type="game genre" x="780" xOrigin="center" y="322" yOrigin="center" width="60" height="60" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<text value="GENRE" x="780" xOrigin="center" y="376" yOrigin="center" font="fonts/Roboto-Regular.ttf" fontSize="20" loadFontSize="20" fontColor="000000" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</text>
+
+<reloadableText type="game genre" alpha="0" x="780" y="395" xOrigin="center" yOrigin="center" textFormat="uppercase" font="fonts/Roboto-Black.ttf" fontSize="20" loadFontSize="20" fontColor="000000" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableText>
+
+<!-- PLATAFORMA DEL JUEGO -->
+<reloadableImage mode="commonlayout" type="game platform" x="960" xOrigin="center" y="322" yOrigin="center" width="80" height="80" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<reloadableText type="game platform type" x="960" xOrigin="center" y="376" yOrigin="center" textFormat="uppercase" font="fonts/Roboto-Regular.ttf" fontSize="20" loadFontSize="20" fontColor="000000" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableText>
+
+<reloadableText type="game platform" alpha="0" x="960" y="395" xOrigin="center" yOrigin="center" textFormat="uppercase" font="fonts/Roboto-Black.ttf" fontSize="20" loadFontSize="20" fontColor="000000" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableText>
+
+<!-- FORMATO DEL JUEGO -->
+<reloadableImage mode="commonlayout" type="game format" x="1140" xOrigin="center" y="322" width="80" height="80" yOrigin="center" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<text value="MEDIA" x="1140" y="376" xOrigin="center" yOrigin="center" alpha="0" font="fonts/Roboto-Regular.ttf" fontSize="20" loadFontSize="20" fontColor="000000" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</text>
+
+<reloadableText type="game format name" alpha="0" x="1140" y="395" xOrigin="center" yOrigin="center" textFormat="uppercase" font="fonts/Roboto-Black.ttf" fontSize="20" loadFontSize="20" fontColor="000000" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableText>
+
+<!-- RESOLUCION DEL JUEGO -->
+<reloadableImage mode="commonlayout" type="game ratio" x="1317" xOrigin="center" y="322" yOrigin="center" width="104" height="104" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<text value="RESOLUTION" x="1320" xOrigin="center" y="376" yOrigin="center" font="fonts/Roboto-Regular.ttf" fontSize="20" loadFontSize="20" fontColor="000000" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</text>
+
+<reloadableText type="game resolution" x="1320" xOrigin="center" y="394" yOrigin="center" font="fonts/Roboto-Black.ttf" fontSize="20" loadFontSize="20" fontColor="000000" alpha="0" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableText>
+
+
+<!-- HISTORIA DEL JUEGO -->
+
+<reloadableScrollingText mode="system" type="story" alpha="0" x="560" y="444" xOrigin="left" width="810" height="400" font="fonts/Roboto-Regular.ttf" fontSize="24" loadFontSize="24" fontColor="000000" direction="vertical" alignment="justified" scrollingSpeed="15" startPosition="0" startTime="4" endTime="1" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableScrollingText>
+
+<!------------------------>
+<!-- CONTROLLER MAPPING -->
+<!------------------------>
+
+<image src="images/controller.png" alpha="0" x="center" xOrigin="center" y="center" yOffset="222" width="290" height="204" layer="10">
+   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
+   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</Image>
+
+<!-------------------------------->
+<!-- CONTROLLER MAPPING BUTTONS -->
+<!-------------------------------->
+
+<image src="images/controller pad.png" x="921" xOrigin="center" y="center" yOrigin="center" yOffset="325" width="46" height="46" alpha="0" layer="10">
+   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".4"/></set></>
+   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</Image>
+
+<reloadableImage mode="commonlayout" type="controller D-pad" x="921" xOrigin="center" y="center" yOrigin="center" yOffset="325" width="40" height="40" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller D-pad t" x="center" xOffset="-66" xOrigin="right" y="center" yOrigin="center" yOffset="326" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="000000" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<!-- L-STICK -->
+<image src="images/controller stick.png" x="center" xOrigin="center" xOffset="-76" y="center" yOrigin="center" yOffset="275" width="44" height="44" alpha="0" layer="10">
+   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".4"/></set></>
+   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</Image>
+
+<reloadableImage mode="commonlayout" type="controller L-stick" x="center" xOrigin="center" xOffset="-76" y="center" yOrigin="center" yOffset="275" width="36" height="36" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller L-stick t" x="center" xOrigin="right" xOffset="-101" y="center" yOrigin="center" yOffset="276" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="000000" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+
+<!-- R-STICK -->
+<image src="images/controller stick.png" x="center" xOrigin="center" xOffset="40" y="center" yOrigin="center" yOffset="325" width="44" height="44" alpha="0" layer="10">
+   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".4"/></set></>
+   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</Image>
+
+<reloadableImage mode="commonlayout" type="controller R-stick" x="center" xOrigin="center" xOffset="40" y="center" yOrigin="center" yOffset="325" width="36" height="36" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller R-stick t" x="center" xOrigin="left" xOffset="71" y="center" yOrigin="center" yOffset="326" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="000000" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller A" yOffset="-8" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller A t" x="center" xOffset="310" xOrigin="center" y="center" yOffset="300" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="ffffff" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".9"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller B" yOffset="-8" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller B t" x="center" xOffset="340" xOrigin="center" y="center" yOffset="269" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="ffffff" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".9"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller X" yOffset="-8" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller X t" x="center" xOffset="120" xOrigin="center" y="center" yOffset="269" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="ffffff" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".9"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller Y" yOffset="-8" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller Y t" x="center" xOffset="150" xOrigin="center" y="center" yOffset="238" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="ffffff" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".9"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller LB" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller LB t" x="center" xOffset="-310" xOrigin="center" y="center" yOffset="175" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="ffffff" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".9"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller LT" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller LT t" x="center" xOffset="-310" xOrigin="center" y="center" yOffset="144" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="ffffff" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".9"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller RB" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller RB t" x="center" xOffset="324" xOrigin="center" y="center" yOffset="175" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="ffffff" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".9"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller RT" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller RT t" x="center" xOffset="324" xOrigin="center" y="center" yOffset="144" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="ffffff" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".9"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller start" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller start t" x="center" xOffset="99" xOrigin="center" y="center" yOffset="175" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="000000" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller select" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller select t" x="center" xOffset="-94" xOrigin="center" y="center" yOffset="175" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="000000" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<reloadableImage mode="commonlayout" type="controller xbox" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableImage>
+
+<reloadableText type="controller xbox t" x="center" xOffset="79" xOrigin="center" y="center" yOffset="144" textFormat="uppercase" font="fonts/RobotoCondensed-Bold.ttf" fontSize="19" loadFontSize="19" fontColor="000000" alpha="0" layer="11">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
+</reloadableText>
+
+<!-- CAPTURA DE LA PANTALLA DE TITULO DEL JUEGO -->
+
+<reloadableImage mode="system" type="screenshot 1" alpha="0" x="1673" y="305" xOrigin="center" yOrigin="center" height="220" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<!-- CAPTURA INGAME DEL JUEGO 01 -->
+<reloadableImage mode="system" type="screenshot 2" alpha="0" x="1673" y="center" xOrigin="center" yOrigin="center" height="220" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<!-- CAPTURA INGAME DEL JUEGO 02 -->
+
+<reloadableImage mode="system" type="screenshot 3" alpha="0" x="1673" y="775" xOrigin="center" yOrigin="center" height="220" layer="10">
+  <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></onMenuEnter>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></onMenuExit>
+</reloadableImage>
+
+<!---------------------------->
+<!-- ARRIBA IZQUIERDA -------->
+<!---------------------------->
+
+<!-- NOMBRE DE LA COLECCION -->
+<text value="ALL THE" x="52" y="48" yOrigin="center" alpha="0" font="fonts/Scout-Light.otf" fontSize="36" loadFontSize="36" fontColor="000000" layer="13">
+  <onEnter>
+    <set duration=".4"><animate type="nop"/></set>
+    <set duration=".3"><animate type="xoffset" from="-20" to="0"/><animate type="alpha" from="0" to=".5"/></set></>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/><animate type="xOffset" from="0" to="-20"/></set></onMenuExit>
+  <onMenuExit menuIndex="1"><set duration=".15"><animate type="nop"/></set><set duration=".15"><animate type="alpha" to=".5"/><animate type="xOffset" from="-20" to="0"/></set></onMenuEnter>
+</text>
+
+<!-- NOMBRE DE LA COLECCION -->
+<text value="GAME" x="52" y="48" xOrigin="left" yOrigin="center" alpha="0" font="fonts/Scout-Light.otf" fontSize="36" loadFontSize="36" fontColor="000000" layer="13">
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="nop"/></set><set duration=".15"><animate type="alpha" to=".5"/><animate type="xOffset" from="20" to="0"/></set></onMenuExit>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/><animate type="xOffset" from="0" to="20"/></set></onMenuExit>
+</text>
+
+
+<!-- NOMBRE DE LA COLECCION -->
+<text value="GAMES" x="170" y="48" yOrigin="center" alpha="0" font="fonts/Scout-Black.otf" fontSize="37" loadFontSize="37" fontColor="000000" layer="13">
+  <onEnter>
+    <set duration=".4"><animate type="nop"/></set>
+    <set duration=".3"><animate type="xoffset" from="-20" to="0"/><animate type="alpha" from="0" to=".65"/></set></>
+    <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/><animate type="xOffset" from="0" to="-20"/></set></onMenuExit>
+    <onMenuExit menuIndex="1"><set duration=".15"><animate type="nop"/></set><set duration=".15"><animate type="alpha" to=".65"/><animate type="xOffset" from="-20" to="0"/></set></onMenuEnter>
+</text>
+
+<!-- NOMBRE DE LA COLECCION -->
+<text value="INFORMATION" x="138" y="48" xOrigin="left" yOrigin="center" alpha="0" font="fonts/Scout-Black.otf" fontSize="37" loadFontSize="37" fontColor="000000" layer="13">
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="nop"/></set><set duration=".15"><animate type="alpha" to=".65"/><animate type="xOffset" from="20" to="0"/></set></onMenuExit>
+  <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/><animate type="xOffset" from="0" to="20"/></set></onMenuExit>
+</text>
+
+<reloadableText type="time" timeFormat="%H" x="1822" y="48" xOrigin="right" yOrigin="center" alpha="0" font="fonts/Scout-Black.otf" fontSize="37" loadFontSize="37" fontColor="000000" layer="13">
+  <onEnter>
+    <set duration=".4"><animate type="nop"/></set>
+    <set duration=".3"><animate type="xoffset" from="20" to="0"/><animate type="alpha" from="0" to=".65"/></set></>
+</reloadableText>
+
+<text value=":" x="1824" y="48" yOrigin="center" alpha="0" font="fonts/Scout-Light.otf" fontSize="36" loadFontSize="36" fontColor="000000" layer="13">
+  <onEnter>
+    <set duration=".4"><animate type="nop"/></set>
+    <set duration=".3"><animate type="xoffset" from="20" to="0"/><animate type="alpha" from="0" to=".5"/></set></>
+</text>
+
+<reloadableText type="time" timeFormat="%M" x="1854" y="48" xOrigin="center" yOrigin="center" alpha="0" font="fonts/Scout-Light.otf" fontSize="36" loadFontSize="36" fontColor="000000" layer="13">
+  <onEnter>
+    <set duration=".4"><animate type="nop"/></set>
+    <set duration=".3"><animate type="xoffset" from="20" to="0"/><animate type="alpha" from="0" to=".5"/></set></>
+</reloadableText>
+
+<container backgroundColor="000000" x="52" y="95" backgroundAlpha="0" height="2" width="1816" layer="13">
+  <onEnter>
+    <set duration=".4"><animate type="nop"/></set>
+    <set duration=".3"><animate type="backgroundAlpha" from="0" to=".1"/></set></>
+</container>
+
+<container backgroundColor="000000" backgroundAlpha="0" height="stretch" width="stretch" layer="13">
+  <onGameEnter><set duration=".3"><animate type="backgroundAlpha" from="0" to="1"/></set></onGameEnter>
+  <onGameExit><set duration=".1"><animate type="nop"/></set><set duration=".3"><animate type="backgroundAlpha" from="1" to="0"/></set></onGameExit>
+</container>
+
+ <container backgroundColor="000000" backgroundAlpha="0" height="stretch" width="stretch" layer="19">
+   <onEnter><set duration=".3"><animate type="backgroundAlpha" from="1" to="0"/></set></onEnter>
+   <onExit><set duration=".3"><animate type="backgroundAlpha" from="0" to="1"/></set><set duration=".7"><animate type="nop"/></set></onExit>
+ </container>
+
+ <reloadableVideo mode="system" imageType="screenshot" alpha="0" x="center" y="center" xOrigin="center" yOrigin="center" layer="19"/>
+
+</layout>
