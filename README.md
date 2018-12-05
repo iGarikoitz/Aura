@@ -1,4 +1,5 @@
-# AURA
+AURA
+=
 
 This is a [RetroFE](http://retrofe.nl) layout in which I have put all my dedication for more than two years to make it a reality.
 
