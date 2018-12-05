@@ -360,7 +360,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller A" yOffset="-8" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller A" x="1175" y="835" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -370,7 +370,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller B" yOffset="-8" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller B" x="1206" y="804" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -380,7 +380,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller X" yOffset="-8" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller X" x="1006" y="804" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -390,7 +390,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller Y" yOffset="-8" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller Y" x="1037" y="773" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -400,7 +400,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller LB" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller LB" x="560" y="710" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -410,7 +410,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller LT" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller LT" x="560" y="679" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -420,7 +420,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller RB" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller RB" x="1172" y="710" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -430,7 +430,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller RT" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller RT" x="1172" y="679" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to=".65"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -440,7 +440,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller start" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller start" x="969" y="710" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -450,7 +450,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller select" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller select" x="793" y="710" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
@@ -460,7 +460,7 @@
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="controller xbox" yOffset="17" width="stretch" height="stretch" alpha="0" layer="11">
+<reloadableImage mode="commonlayout" type="controller xbox" x="947" y="679" alpha="0" layer="11">
   <onMenuEnter menuIndex="1"><set duration=".3"><animate type="alpha" to="1"/></set></>
   <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" to="0"/></set></>
 </reloadableImage>
