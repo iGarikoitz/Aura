@@ -1,10 +1,15 @@
-# Aura
+AURA
+=
 
 This is a [RetroFE](http://retrofe.nl) layout in which I have put all my dedication for more than two years to make it a reality.
 
-# Notes
+![enter image description here](https://dl.dropbox.com/s/deczn7e8gi312ge/aura%20menu.jpg?dl=0)
 
-You need to download emulator and roms to play.
+![enter image description here](https://dl.dropbox.com/s/caxcgtv527njzfs/aura%20info.jpg?dl=0)
+
+## How to start using it
+
+First download the latest version from this [link](https://github.com/iGarikoitz/Aura/releases). After this, you need to download emulator and get roms to play.
 
 ### Retroarch
 
@@ -24,7 +29,9 @@ You need to download emulator and roms to play.
 * Put **mslug3.zip** and **neogeo.zip** roms inside mame/roms folder.
 * Put **pbobblen.zip** and **neogeo.zip** roms inside mame/roms folder.
 
-### Game Images
+## How to add my own games.
+
+### Images
 When you add a game, you have to include six images in JPG. Why in JPG image format? Because RetroFE works more fluid using JPG compared to PNG.
 
  1. **Cover** - Resolution: 460 x 690 pixels.
