@@ -34,21 +34,9 @@ First download the latest version from this [link](https://github.com/iGarikoitz
 
   When you add a game, you have to include six images in JPG. Why in JPG image format? Because RetroFE works more fluid using JPG compared to PNG.
 
-    1. **Cover** - Resolution: 460 x 690 pixels.
-
-    Game artwork with logo.
-    2. **Fanart** -  Resolution: 1280 x 720 pixels.
-
-    Same Game artwork occupying the entire width.
-    3. **Fanart blur** -  Resolution: 1280 x 720 pixels.
-
-    Same Fanart image with 15% Gaussian blur.
-    4. **Screenshot 1** Resolution: ? x 220 pixels (Depends on the screen ratio).
-
-    Title screen. The height has to be 220 pixels.
-    5. **Screenshot 2** Resolution: ? x 220 pixels (Depends on the screen ratio).
-
-    First gameplay screenshot.. The height has to be 220 pixels.
-    6. **Screenshot 3** Resolution: ? x 220 pixels (Depends on the screen ratio).
-
-    Second gameplay screenshot.. The height has to be 220 pixels.
+    1. **Cover** (460 x 690 pixels) Game artwork with logo.
+    2. **Fanart** 1280 x 720 pixels) Same Game artwork occupying the entire width.
+    3. **Fanart blur** (1280 x 720 pixels) Same Fanart image with 15% Gaussian blur.
+    4. **Screenshot 1** (? x 220 pixels) (Depends on the screen ratio). Title screen. The height has to be 220 pixels.
+    5. **Screenshot 2** (? x 220 pixels) (Depends on the screen ratio). First gameplay screenshot. The height has to be 220 pixels.
+    6. **Screenshot 3** (? x 220 pixels) (Depends on the screen ratio). Second gameplay screenshot. The height has to be 220 pixels.
