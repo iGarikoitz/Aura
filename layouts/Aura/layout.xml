@@ -106,44 +106,28 @@
     <item xOffset="1077" alpha="0"/>
 </menu>
 
-<reloadableText type="menu name" x="1250" y="792" xOrigin="left" yOrigin="center" alpha="0" textFormat="uppercase" font="fonts/ScoutCond-Bold.otf" fontSize="50" loadFontSize="50" fontColor="000000" layer="13">
-  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set></>
-  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
-  <onMenuEnter menuIndex="1"><set duration=".01"><animate type="xoffset" from="0" to="20"/></set></onMenuExit>
-  <onMenuIdle menuIndex="0">
-		<set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set>
-		<set duration="100000"><animate type="nop"/></set></>
-  <onMenuScroll menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></>
+<reloadableText type="menu name" menuScrollReload="yes" x="1250" y="792" xOrigin="left" yOrigin="center" alpha="0" textFormat="uppercase" font="fonts/ScoutCond-Bold.otf" fontSize="50" loadFontSize="50" fontColor="000000" layer="13">
+  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onEnter>
+  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onMenuExit>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
 </reloadableText>
 
-<reloadableImage mode="commonlayout" type="game year" x="1250" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
-  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set></>
-  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
-  <onMenuEnter menuIndex="1"><set duration=".01"><animate type="xoffset" from="0" to="20"/></set></onMenuExit>
-  <onMenuIdle menuIndex="0">
-		<set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set>
-		<set duration="100000"><animate type="nop"/></set></>
-  <onMenuScroll menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></>
+<reloadableImage mode="commonlayout" type="game year" menuScrollReload="yes" x="1250" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onEnter>
+  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set></onMenuExit>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
 </reloadableImage>
 
-<reloadableImage mode="commonlayout" type="menu players" x="1321" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
-  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set></>
-  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
-  <onMenuEnter menuIndex="1"><set duration=".01"><animate type="xoffset" from="0" to="20"/></set></onMenuExit>
-  <onMenuIdle menuIndex="0">
-		<set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set>
-		<set duration="100000"><animate type="nop"/></set></>
-  <onMenuScroll menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></>
+<reloadableImage mode="commonlayout" type="menu players" menuScrollReload="yes" x="1321" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onEnter>
+  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set></onMenuExit>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
 </reloadableImage>
 
-<reloadableImage mode="commonlayout" type="menu genre" x="1438" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
-  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set></>
-  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
-  <onMenuEnter menuIndex="1"><set duration=".01"><animate type="xoffset" from="0" to="20"/></set></onMenuExit>
-  <onMenuIdle menuIndex="0">
-		<set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set>
-		<set duration="100000"><animate type="nop"/></set></>
-  <onMenuScroll menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></>
+<reloadableImage mode="commonlayout" type="menu genre" menuScrollReload="yes" x="1438" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onEnter>
+  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set></onMenuExit>
+  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
 </reloadableImage>
 
 <reloadableImage mode="commonlayout" type="firstLetter" menuScrollReload="yes" x="center" y="990" xOrigin="center" yOrigin="center" alpha="0" layer="13">
