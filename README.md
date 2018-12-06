@@ -13,26 +13,24 @@ First download the latest version from this [link](https://github.com/iGarikoitz
 
 ### Emulators
 
-* **Arcade**
+For arcade games **RetroArch** is used with the core `final burn alpha` by default. You can also use **MAME** if you prefer.
 
-	By default, **RetroArch** is used with the core `final burn alpha`. You can also use **MAME** if you prefer.
+* **Arcade (Using RetroArch)**
 
-	- **RetroArch**
+	1. [Download](https://www.retroarch.com/?page=platforms) and put inside the emulators folder.
+	2. Open RetroArch and go to: `Online Updater/core updater/` and select `Arcade (FB Alpha)` to download de core.
 
-		1. [Download](https://www.retroarch.com/?page=platforms) and put inside the emulators folder.
-		2. Open RetroArch and go to: `Online Updater/core updater/` and select `Arcade (FB Alpha)` to download de core.
+* **Arcade (Using MAME)**
 
-	- **MAME**
+	1. [Download](https://www.mamedev.org/release.html) and put inside the emulators folder.
+	2. In each game you want to use **MAME** you need to Find `settings.conf` inside the game folder. In `launcher` in launcher, you have to replace `final burn alpha` with `mame` same as in the code below:
 
-		1. [Download](https://www.mamedev.org/release.html) and put inside the emulators folder.
-		2. In each game you want to use "mame" you need to Find `settings.conf` inside the game folder. In `launcher` in launcher, you have to replace `final burn alpha` with `mame` same as in the code below:
-
-		~~~
- 		list.path            = collections/%ITEM_COLLECTION_NAME%
-		list.extensions      = zip
-		launcher             = mame
-		media.system_artwork = collections/%ITEM_COLLECTION_NAME%/
-		~~~
+	~~~
+ 	list.path            = collections/%ITEM_COLLECTION_NAME%
+	list.extensions      = zip
+	launcher             = mame
+	media.system_artwork = collections/%ITEM_COLLECTION_NAME%/
+	~~~
 
 ### ROMs
 
