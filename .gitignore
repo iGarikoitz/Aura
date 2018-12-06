@@ -2,3 +2,6 @@
 .DS_Store
 meta.db
 log.txt
+*.zip
+emulators/retroarch/
+emulators/mame/
