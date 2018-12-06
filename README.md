@@ -11,28 +11,39 @@ This is a [RetroFE](http://retrofe.nl) layout in which I have put all my dedicat
 
 First download the latest version from this [link](https://github.com/iGarikoitz/Aura/releases). After this, you need to download **emulator** and get **ROMs** to play.
 
-### Emulators
+## Emulators
 
 For arcade games **RetroArch** is used with the core `final burn alpha` by default. You can also use **MAME** if you prefer.
 
-* **Arcade (Using RetroArch)**
+### Arcade (Using RetroArch)
 
-	1. [Download](https://www.retroarch.com/?page=platforms) and put inside the emulators folder.
-	2. Open RetroArch and go to: `Online Updater/core updater/` and select `Arcade (FB Alpha)` to download de core.
+1. [Download](https://www.retroarch.com/?page=platforms) and put inside the emulators folder.
+2. Open RetroArch and go to: `Online Updater/core updater/` and select `Arcade (FB Alpha)` to download de core.
 
-* **Arcade (Using MAME)**
+### Arcade (Using MAME)
 
-	1. [Download](https://www.mamedev.org/release.html) and put inside the emulators folder.
-	2. In each game you want to use **MAME** you need to Find `settings.conf` inside the game folder. In `launcher` in launcher, you have to replace `final burn alpha` with `mame` same as in the code below:
+1. [Download](https://www.mamedev.org/release.html) and put inside the emulators folder.
+2. Rename emulators/**mame0204b_64bit** folder to **mame**.
+3. In each game you want to use **MAME** you need to find `settings.conf` inside the game folder. In **launcher** section, you have to replace `final burn alpha` with `mame` same as in the code below:
 
+	By default
 	~~~
- 	list.path            = collections/%ITEM_COLLECTION_NAME%
+	list.path            = collections/%ITEM_COLLECTION_NAME%
+	list.extensions      = zip
+	launcher             = final burn alpha
+	media.system_artwork = collections/%ITEM_COLLECTION_NAME%/
+	~~~
+	Using MAME
+	~~~
+	list.path            = collections/%ITEM_COLLECTION_NAME%
 	list.extensions      = zip
 	launcher             = mame
 	media.system_artwork = collections/%ITEM_COLLECTION_NAME%/
 	~~~
 
-### ROMs
+## ROMs
+
+In Aura, the games are stored in packs, this is why everything related to each game has to go inside the folder of its respective folder, including its ROM
 
 * Put **ddonpach.zip** rom inside `dodonpachi` folder.
 * Put **garou.zip** and **neogeo.zip** roms inside `garou mark of the wolves` folder.
