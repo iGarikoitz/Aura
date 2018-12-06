@@ -9,30 +9,44 @@ This is a [RetroFE](http://retrofe.nl) layout in which I have put all my dedicat
 
 ## How to start using it
 
-First download the latest version from this [link](https://github.com/iGarikoitz/Aura/releases). After this, you need to download emulator and get roms to play.
+First download the latest version from this [link](https://github.com/iGarikoitz/Aura/releases). After this, you need to download **emulator** and get **ROMs** to play.
 
-* **Retroarch**
+### Emulators
 
-	* Download [RetroArch](https://www.retroarch.com/?page=platforms) and put inside the emulators folder.
-	* Put **ddonpach.zip** rom inside dodonpachi folder.
-	* Put **garou.zip** and **neogeo.zip** roms inside garou mark of the wolves folder.
-	* Put **mslug3.zip** and **neogeo.zip** roms inside metal slug 3 folder.
-	* Put **pbobblen.zip** and **neogeo.zip** roms inside puzzle bobble folder.
+* **Arcade**
 
-* **Retroarch**
-	* Download [Mame](https://www.mamedev.org/release.html) and put inside the emulators folder.
-	* You have to change the code from inside the **game.bat** file:
-	`"../../emulators/mame/mame64.exe" -rompath "../../emulators/mame/roms" "rom name"`
-	* Put **ddonpach.zip** rom inside mame/roms folder.
-	* Put **garou.zip** and **neogeo.zip** roms inside mame/roms folder.
-	* Put **mslug3.zip** and **neogeo.zip** roms inside mame/roms folder.
-	* Put **pbobblen.zip** and **neogeo.zip** roms inside mame/roms folder.
+	By default, **RetroArch** is used with the core `final burn alpha`. You can also use **MAME** if you prefer.
+
+	- **RetroArch**
+
+		1. [Download](https://www.retroarch.com/?page=platforms) and put inside the emulators folder.
+		2. Open RetroArch and go to: `Online Updater/core updater/` and select `Arcade (FB Alpha)` to download de core.
+
+	- **MAME**
+
+		1. [Download](https://www.mamedev.org/release.html) and put inside the emulators folder.
+		2. In each game you want to use "mame" you need to Find `settings.conf` inside the game folder. In `launcher` in launcher, you have to replace `final burn alpha` with `mame` same as in the code below:
+
+		~~~
+ 		list.path            = collections/%ITEM_COLLECTION_NAME%
+		list.extensions      = zip
+		launcher             = mame
+		media.system_artwork = collections/%ITEM_COLLECTION_NAME%/
+		~~~
+
+### ROMs
+
+* Put **ddonpach.zip** rom inside `dodonpachi` folder.
+* Put **garou.zip** and **neogeo.zip** roms inside `garou mark of the wolves` folder.
+* Put **mslug3.zip** and **neogeo.zip** roms inside `metal slug 3` folder.
+* Put **pbobblen.zip** and **neogeo.zip** roms inside `puzzle bobble` folder.
+* Put **sfiii3.zip** and **neogeo.zip** roms inside `street fighter 3 3rd strike` folder.
 
 ## How to add my own games.
 
-* **Images**
+### Images
 
-  When you add a game, you have to include six images in JPG. Why in JPG image format? Because RetroFE works more fluid using JPG compared to PNG.
+When you add a game, you have to include six images in JPG. Why in JPG image format? Because RetroFE works more fluid using JPG compared to PNG.
 
   *  **Cover** (460 x 690 pixels) Game artwork with logo.
   *  **Fanart** 1280 x 720 pixels) Same Game artwork occupying the entire width.
